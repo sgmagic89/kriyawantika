@@ -1,38 +1,7 @@
 <div id="wrapper">
-
-<!-- Header -->
-      <header id="header" class="alt">
-        <a href="/home" class="logo"><strong>Kriyawantika</strong> <span></span></a>
-        <nav>
-          <a href="#menu">Menu</a>
-        </nav>
-      </header>
-
-    <!-- Menu -->
-      <nav id="menu">
-        <ul class="links">
-          <li><a href="/home">Home</a></li>
-        </ul>
-        <ul class="actions stacked">
-          <li><a href="/home#footer" class="button primary fit">Contact Us</a></li>
-        </ul>
-      </nav>
-
-<router-outlet></router-outlet>
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="inner">
-          <ul class="icons">
-            <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-            <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-          </ul>
-          <ul class="copyright">
-            <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-          </ul>
-        </div>
-      </footer>
-
-      </div>
+  <app-header></app-header>
+  <app-nav></app-nav>
+  <router-outlet></router-outlet>
+  <app-contact-us></app-contact-us>
+  <app-footer></app-footer>
+</div>

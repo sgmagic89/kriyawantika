@@ -2,10 +2,10 @@
         <section id="banner" class="major">
           <div class="inner">
             <header class="major">
-              <h1>Kriyawantika Solutions</h1>
+              <h1>{{ bannerData.companyName }}</h1>
             </header>
             <div class="content">
-              <p>We provide Enterprise level software development and support services</p>
+              <p>{{ bannerData.tagLine }}</p>
               <ul class="actions">
                 <li><a href="#one" class="button next scrolly">Let's Explore</a></li>
               </ul>
@@ -18,77 +18,16 @@
 
           <!-- One -->
             <section id="one" class="tiles">
-              <article>
-                <span class="image">
-                  <img src="assets/images/webapp.png" alt="" />
-                </span>
-                <header class="major">
-                  <h3><a href="/domain" class="link">Web Application Development</a></h3>
-                  <p>UI Design, UX and Web Development with latest tools and technology</p>
-                </header>
-              </article>
-              <article>
-                <span class="image">
-                  <img src="assets/images/mobileapp.png" alt="" />
-                </span>
-                <header class="major">
-                  <h3><a href="/domain" class="link">Mobile Application Development</a></h3>
-                  <p>Cross platform, reliable and performant application development</p>
-                </header>
-              </article>
-              <article>
-                <span class="image">
-                  <img src="assets/images/desktopapp.png" alt="" />
-                </span>
-                <header class="major">
-                  <h3><a href="/domain" class="link">Desktop Application Development</a></h3>
-                  <p>Efficient, Fast, Reliable and Crossplatform</p>
-                </header>
-              </article>
-              <article>
-                <span class="image">
-                  <img src="assets/images/cloudapp.png" alt="" />
-                </span>
-                <header class="major">
-                  <h3><a href="/domain" class="link">Cloud Services</a></h3>
-                  <p>Cloud Hosting, Cloud Migration, Analytics and a lot more</p>
-                </header>
-              </article>
-              <article>
-                <span class="image">
-                  <img src="assets/images/consulting.png" alt="" />
-                </span>
-                <header class="major">
-                  <h3><a href="/domain" class="link">Consulting</a></h3>
-                  <p>Effective, Realistic and Optimum software consultancy</p>
-                </header>
-              </article>
-              <article>
-                <span class="image">
-                  <img src="assets/images/iot.png" alt="" />
-                </span>
-                <header class="major">
-                  <h3><a href="/domain" class="link">IOT Integration</a></h3>
-                  <p>IOT Software solutions, Edge computing, Analytics and a lot more</p>
-                </header>
-              </article>
-              <article>
-                <span class="image">
-                  <img src="assets/images/automation.png" alt="" />
-                </span>
-                <header class="major">
-                  <h3><a href="/domain" class="link">Process Automation</a></h3>
-                  <p>Process Analysis, Optimization, DevOps and Automation services</p>
-                </header>
-              </article>
-              <article>
-                <span class="image">
-                  <img src="assets/images/qa.png" alt="" />
-                </span>
-                <header class="major">
-                  <h3><a href="/domain" class="link">Quality Assurance</a></h3>
-                  <p>Software testing, Quality Analysis, Improvement Planning and lot more</p>
-                </header>
-              </article>
+              <ng-container *ngFor="let domain of domainData">
+                <article>
+                  <span class="image">
+                    <img src="{{domain.imageUrl}}" alt="" />
+                  </span>
+                  <header class="major">
+                    <h3><a href="{{domain.link}}" class="link">{{domain.heading}}</a></h3>
+                    <p>{{domain.description}}</p>
+                  </header>
+                </article>
+              </ng-container>
             </section>
         </div>

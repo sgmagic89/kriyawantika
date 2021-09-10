@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppDataService } from '../services/app-data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  bannerData: any;
+  domainData: any[] = [];
+  constructor(private router: Router, private appDataService: AppDataService) { }
 
   ngOnInit() {
+    this.bannerData = this.appDataService.getBannerData();
+    this.domainData = this.appDataService.getDomainsData();
   }
 
   navigateTo(domainName: string) {

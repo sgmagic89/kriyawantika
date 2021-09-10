@@ -14,11 +14,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.bannerData = this.appDataService.getBannerData();
-    this.domainData = this.appDataService.getDomainsData();
-  }
-
-  navigateTo(domainName: string) {
-    this.router.navigate(['domain']);
+    this.domainData = this.appDataService.getDomainData();
   }
 
 }

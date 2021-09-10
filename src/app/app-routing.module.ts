@@ -6,7 +6,7 @@ import { SubDomainComponent } from './sub-domain/sub-domain.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'domain', component: DomainComponent},
+  {path: 'services/:name', component: DomainComponent},
   {path: 'sub-domain', component: SubDomainComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];

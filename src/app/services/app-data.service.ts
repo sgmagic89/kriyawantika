@@ -11,8 +11,13 @@ getBannerData() {
   return AppData.mainBannerData;
 }
 
-getDomainsData() {
-  return AppData.domains;
+getDomainData(domainName?: string): any{
+  if(domainName) {
+    return AppData.domainData.find( domain => domain.name === domainName);
+  }
+  return AppData.domainData;
 }
+
+
 
 }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DomainComponent } from './domain/domain.component';
@@ -12,6 +12,7 @@ import { ContactUsComponent } from './core/contact-us/contact-us.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
    declarations: [
       AppComponent,
@@ -25,9 +26,11 @@ import { HttpClientModule } from '@angular/common/http';
    ],
    imports: [
 	 BrowserModule,
+    BrowserAnimationsModule,
 	 AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot()
 	],
    providers: [],
    bootstrap: [

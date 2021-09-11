@@ -8,6 +8,7 @@ export const AppData = {
       heading: 'Web Application Development',
       description: 'UI Design, UX and Web Development with latest tools and technology',
       name: 'web-app',
+      menuName: 'Web Apps',
       domainDetails: {
         capabilities: `A web application (or web app) is application software that runs on a web server, unlike computer-based 
         software programs that are run locally on the operating system (OS) of the device. Web applications are accessed by 
@@ -35,6 +36,7 @@ export const AppData = {
       heading: 'Mobile Application Development',
       description: 'Cross platform, reliable and performant mobile applications',
       name: 'mobile-app',
+      menuName: 'Mobile Apps',
       domainDetails: {
         capabilities: `Mobile application development is the set of processes and procedures involved in writing software for 
         small, wireless computing devices, such as smartphones and other hand-held devices. Like web application development, 
@@ -63,6 +65,7 @@ export const AppData = {
       heading: 'Desktop Application Development',
       description: 'Efficient, Reliable, Standalone and Crossplatform desktop applications',
       name: 'desktop-app',
+      menuName: 'Desktop Apps',
       domainDetails: {
         capabilities: `These applications are specifically used on a desktop, laptop or other device. 
         It can be used only on that device, on which it is installed. If the same application is being used on other device, 
@@ -88,6 +91,7 @@ export const AppData = {
       heading: 'Cloud Services',
       description: 'Cloud Hosting, Cloud Migration, Analytics and a lot more',
       name: 'cloud',
+      menuName: 'Cloud Services',
       domainDetails: {
         capabilities: `Cloud-based solutions are believed to dominate the digital world. According to Cisco, the cloud will host over 94% of workload and computing processes in 2021.
         Need numbers? Over 47% of businesses stated potential budget savings as the main reason for their cloud migration. 
@@ -113,6 +117,7 @@ export const AppData = {
       heading: 'Consulting',
       description: 'Effective, Realistic and Optimum software consultancy',
       name: 'consulting',
+      menuName: 'Consulting',
       domainDetails: {
         capabilities: `Today the successful development of the enterprise requires all enterprise information systems to meet the business requirements 
         and to be one of the enterprise competitive advantages. The practice shows that organizations often face difficulties trying to ensure compliance 
@@ -141,6 +146,7 @@ export const AppData = {
       heading: 'IOT Integration',
       description: 'IOT Software solutions, Edge computing, Analytics and a lot more',
       name: 'iot',
+      menuName: 'IOT',
       domainDetails: {
         capabilities: `The Internet of Things is actually a pretty simple concept, it means taking all the physical places and things in the 
         world and connecting them to the internet. When something is connected to the internet, that means that it can send information or 
@@ -167,6 +173,7 @@ export const AppData = {
       heading: 'Process Automation',
       description: 'Process Analysis, Optimization, DevOps and Automation services',
       name: 'automation',
+      menuName: 'Automation',
       domainDetails: {
         capabilities: `Our teams focus on helping our clients free up people's time and move and act more rapidly, by automating their everyday business processes. We deliver process automation as a service so organizations can automate and accelerate their business processes on demand. As your partner, we’ll identify the process automation opportunities which would have the most impact on your business. Then we’ll design, implement 
         and manage the automation that will transform your processes, and run seamlessly with your operation, without demanding major changes to your organization.`,
@@ -190,6 +197,7 @@ export const AppData = {
       heading: 'Quality Assurance',
       description: 'Software Testing, Quality Analysis, Improvement Planning and lot more',
       name: 'qa',
+      menuName: 'Quality Assurance',
       domainDetails: {
         capabilities: `A web application (or web app) is application software that runs on a web server, unlike computer-based 
         software programs that are run locally on the operating system (OS) of the device. Web applications are accessed by 

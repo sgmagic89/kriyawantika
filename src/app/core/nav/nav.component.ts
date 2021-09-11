@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppDataService } from 'src/app/services/app-data.service';
 
 @Component({
   selector: 'app-nav',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-
-  constructor() { }
+  domains: any[]= []
+  constructor(private dataService: AppDataService) { }
 
   ngOnInit() {
+    this.domains = this.dataService.getDomainData();
   }
 
 }

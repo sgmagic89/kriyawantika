@@ -44,11 +44,7 @@
 			text-align: center;
 			visibility: hidden;
 			width: 18em;
-
-			> :first-child {
-				margin-top: _size(element-margin);
-			}
-
+			overflow-y: hidden;
 			> :last-child {
 				margin-bottom: (_size(element-margin) * 1.5);
 			}

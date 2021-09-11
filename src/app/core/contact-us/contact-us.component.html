@@ -5,24 +5,40 @@
             <header class="major">
               <h2>Contact Us</h2>
             </header>
-            <form method="post" action="#">
+            <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
               <div class="fields">
                 <div class="field half">
                   <label for="name">Name</label>
-                  <input type="text" name="name" id="name" />
+                  <input type="text" name="name" id="name" formControlName="name"/>
+                  <span class="text-danger"
+                                *ngIf="(form.name.touched || submitted) && form.name.errors?.required">
+                                *Name is required
+                  </span>
                 </div>
                 <div class="field half">
                   <label for="email">Email</label>
-                  <input type="text" name="email" id="email" />
+                  <input type="text" name="email" id="email" formControlName="email"/>
+                  <span class="text-danger"
+                                *ngIf="(form.email.touched || submitted) && form.email.errors?.required">
+                                *Email is required
+                  </span>
+                  <span class="text-danger"
+                                *ngIf="(form.email.touched || submitted) && form.email.errors?.email">
+                                *Not a valid email id
+                  </span>
                 </div>
                 <div class="field">
                   <label for="message">Message</label>
-                  <textarea name="message" id="message" rows="6"></textarea>
+                  <textarea name="message" id="message" rows="6" formControlName="message"></textarea>
+                  <span class="text-danger"
+                                *ngIf="(form.message.touched || submitted) && form.message.errors?.required">
+                                *Please enter some message
+                  </span>
                 </div>
               </div>
               <ul class="actions">
                 <li><input type="submit" value="Send Message" class="primary" /></li>
-                <li><input type="reset" value="Clear" /></li>
+                <li><input type="reset" value="Clear" (click)="clear()"/></li>
               </ul>
             </form>
           </section>
@@ -31,23 +47,27 @@
               <div class="contact-method">
                 <span class="icon solid alt fa-envelope"></span>
                 <h3>Email</h3>
-                <a href="#">information@untitled.tld</a>
+                <a href="#">support@kriyawantika.com</a>
               </div>
             </section>
             <section>
               <div class="contact-method">
                 <span class="icon solid alt fa-phone"></span>
                 <h3>Phone</h3>
-                <span>(000) 000-0000 x12387</span>
+                <span>+91 7378486543</span>
               </div>
             </section>
             <section>
               <div class="contact-method">
                 <span class="icon solid alt fa-home"></span>
                 <h3>Address</h3>
-                <span>1234 Somewhere Road #5432<br />
-                Nashville, TN 00000<br />
-                United States of America</span>
+                <span>27 MIG 2<br />
+                  AWANTIKA AWAS YOJANA<br />
+                  ADA COLONY<br />
+                  NAINI<br />
+                  ALLAHABAD 211008<br />
+                  INDIA
+                </span>
               </div>
             </section>
           </section>

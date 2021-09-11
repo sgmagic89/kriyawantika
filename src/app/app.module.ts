@@ -10,7 +10,8 @@ import { HeaderComponent } from './core/header/header.component';
 import { NavComponent } from './core/nav/nav.component';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
 import { FooterComponent } from './core/footer/footer.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
    declarations: [
       AppComponent,
@@ -24,7 +25,9 @@ import { FooterComponent } from './core/footer/footer.component';
    ],
    imports: [
 	 BrowserModule,
-	 AppRoutingModule
+	 AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
 	],
    providers: [],
    bootstrap: [

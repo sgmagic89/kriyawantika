@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class ContactUsComponent {
   contactForm: FormGroup;
   submitted = false;
-  private apiUrl = 'https://mailthis.to/contact@kriyawantika.com'
+  private apiUrl = 'https://formsubmit.co/contact@kriyawantika.com'
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.contactForm = this.fb.group({
       name: ['',  [Validators.required]],
@@ -22,11 +22,10 @@ export class ContactUsComponent {
    onSubmit() {
      this.submitted = true;
      if(this.contactForm.valid) {
-      this.http.post(this.apiUrl,{
-        email: this.contactForm.value.email,
-        _subject: 'Query from '+this.contactForm.value.name,
-        message: this.contactForm.value.message
-      }).subscribe((response) => {
+      this.http.post(this.apiUrl,{ "form_data": { 
+        "name": this.contactForm.value.name, 
+        "email": this.contactForm.value.email, 
+        "message": this.contactForm.value.message } }).subscribe((response) => {
         console.log(response)
       });
      }

@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class ContactUsComponent {
   contactForm: FormGroup;
   submitted = false;
-  private apiUrl = 'https://formsubmit.co/contact@kriyawantika.com'
+  private apiUrl = 'https://formspree.io/f/xdoyyqjr'
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.contactForm = this.fb.group({
       name: ['',  [Validators.required]],

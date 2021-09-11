@@ -1,48 +1,51 @@
 				<!-- Banner -->
 				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="{{ domainData.imageUrl }}" alt="" />
-							</span>
-							<header class="major">
-								<h1>{{ domainData.heading }}</h1>
-							</header>
-							<div class="content">
-								<p>{{ domainData.description }}</p>
-							</div>
+				<section id="banner" class="style2">
+					<div class="inner">
+						<span class="image">
+							<img src="{{ domainData.imageUrl }}" alt="" />
+						</span>
+						<header class="major">
+							<h1>{{ domainData.heading }}</h1>
+						</header>
+						<div class="content">
+							<p>{{ domainData.description }}</p>
 						</div>
-					</section>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Our Capabilities</h2>
-									</header>
-									<p>{{domainData.domainDetails.capabilities}}</p>
-								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<ng-container *ngFor="let detail of domainData.domainDetails.details">
-									<section>
-										<a href="/sub-domain" [ngStyle]="{'background-image': 'url('+ detail.imageUrl+')'}" class="image">
-										</a>
-										<div class="content">
-											<div class="inner">
-												<header class="major">
-													<h3>{{detail.heading}}</h3>
-												</header>
-												<p>{{detail.description}}</p>
-											</div>
-										</div>
-									</section>
-								</ng-container>
-								
-							</section>
 					</div>
+				</section>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- One -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Our Capabilities</h2>
+								</header>
+								<p>{{domainData.domainDetails.capabilities}}</p>
+							</div>
+						</section>
+
+					<!-- Two -->
+						<section id="two" class="spotlights">
+							<ng-container *ngFor="let detail of domainData.domainDetails.details">
+								<section>
+									<a [ngStyle]="{'background-image': 'url('+ detail.imageUrl+')'}" class="image">
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>{{detail.heading}}</h3>
+											</header>
+											<ng-container *ngFor="let description of detail.descriptions">
+												<p>{{description}}</p>
+											</ng-container>
+											
+										</div>
+									</div>
+								</section>
+							</ng-container>
+							
+						</section>
+				</div>

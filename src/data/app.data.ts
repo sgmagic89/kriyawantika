@@ -175,8 +175,9 @@ export const AppData = {
       name: 'automation',
       menuName: 'Automation',
       domainDetails: {
-        capabilities: `Our teams focus on helping our clients free up people's time and move and act more rapidly, by automating their everyday business processes. We deliver process automation as a service so organizations can automate and accelerate their business processes on demand. As your partner, we’ll identify the process automation opportunities which would have the most impact on your business. Then we’ll design, implement 
-        and manage the automation that will transform your processes, and run seamlessly with your operation, without demanding major changes to your organization.`,
+        capabilities: `Digital Transformation enables automation of complex business processes and streamlines a business for simplicity, achieve digital transformation,
+        increase service quality, improve service delivery or contain costs by integrating applications, restructuring labour resources and 
+        using software applications throughout the organization.`,
         details: [
             { 
                 heading: 'How we do it',
@@ -186,7 +187,7 @@ export const AppData = {
             },
             { 
                 heading: 'Technologies & Tools',
-                descriptions: ['Test Description'],
+                descriptions: ['Our experience with Robotic Process Automation(RPA) can help you in mapping end-to-end process workflow and building and integrated system using a process driven messaging platform.'],
                 imageUrl: 'assets/images/techandtools.png',
             }
         ]
@@ -199,11 +200,8 @@ export const AppData = {
       name: 'qa',
       menuName: 'Quality Assurance',
       domainDetails: {
-        capabilities: `A web application (or web app) is application software that runs on a web server, unlike computer-based 
-        software programs that are run locally on the operating system (OS) of the device. Web applications are accessed by 
-        the user through a web browser with an active network connection. There are lots of technologies available to develop such 
-        apps but as its very volatile technology stack we keep our selfs up to date with the latest technology trends and tools to 
-        provide you the best web applications to make your vision reachable to billions of people over internet.`,
+        capabilities: `Quality Assurance helps in confirming that an organizations quality requirements are being met. Our experts help organizations by managing highest standards of 
+        requirements and make sure the developed product is fit for use by the larger audience.`,
         details: [
             { 
                 heading: 'How we do it',
@@ -214,7 +212,8 @@ export const AppData = {
             },
             { 
                 heading: 'Technologies & Tools',
-                descriptions: ['Test Description'],
+                descriptions: [`With a combined experience of more than 21 years in automation, manual, performance and load testing, we make sure 
+                that defect and risk free product reaches your consumers.`],
                 imageUrl: 'assets/images/techandtools.png',
             }
         ]
